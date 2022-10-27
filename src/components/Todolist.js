@@ -32,7 +32,7 @@ const Todolist = ({ todos, setTodos , setEditTodo}) => {
                         onChange={(event) => event.preventDefault()} />
                     <div>
                         <button className='button-complete task-button' onClick={()=>{handleComplete(todo)}}>
-                            <i className='fa fa-check-circle'></i>
+                            <i className='fa fa-check'></i>
                         </button>
                         { (todo.completed === false) ? <button className='button-edit task-button' onClick={()=>{ handleEdit(todo)}}>
                             <i className='fa fa-edit'></i>
